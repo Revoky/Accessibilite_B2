@@ -3,8 +3,9 @@
 :root {
     --primary_blue: #27275a;
     --dark_blue: #01002c;
-    --primary_beige: #9c7a51;
-    --light_beige: #C59965;
+    --light_blue: #8F98C7;
+    --primary_beige: #C59965;
+    --dark_beige: #B49A7A;
   }
 
 /* _______________Main_______________ */
@@ -19,12 +20,21 @@ body {
     background-color: var(--primary_blue);
 }
 
-p{
+.site_title, h1, h3, h4, .text_comment, .description {
     color: var(--primary_beige);
 }
 
-h1, h2, h3 {
-    color: var(--light_beige);
+p, .date_comment, h2, .redirect_article{
+    color: var(--dark_beige);
+}
+
+h1 {
+    margin-bottom: 3%;
+    font-size: 35px;
+}
+
+ul {
+    list-style-type: none;
 }
 
 /* _______________Header_______________ */
@@ -49,7 +59,7 @@ header {
     border : none;
 }
 
-h1 {
+.site_title {
     font-size: 24px;
 }
 
@@ -59,20 +69,20 @@ header a {
 }
 
 .button_login {
-    color: var(--light_beige);
-    border: 1px solid var(--primary_beige);
+    color: var(--primary_beige);
+    border: 1px solid var(--dark_beige);
     border-radius: 5px;
     margin-right: 2%;
 }
 
 .button_login:hover {
-    background-color: var(--primary_beige);
+    background-color: var(--dark_beige);
     color: #000000;
 }
 
 
 /* _______________Index.html_______________ */
-main {
+.index_main {
     padding-top: 5%;
     padding-bottom: 5%;
     padding-left: 25%;
@@ -83,7 +93,7 @@ main {
     visibility: hidden;
 }
 
-article {
+.home_article {
     display: flex;
     height: 22vh;
     background-color: #01002c;
@@ -97,12 +107,16 @@ article a {
 }
 
 .article_title {
-    color: var(--primary_beige);
+    color: var(--dark_beige);
     font-size: 150%;
 }
 
-.fa-solid {
+.redirect_article:hover {
     color: var(--primary_beige);
+}
+
+.fa-solid {
+    color: var(--dark_beige);
     font-size: 80%;
 }
 
@@ -125,6 +139,10 @@ article a {
     text-overflow: ellipsis;
 }
 
+.redirect_comment {
+    color: var(--light_blue);
+}
+
 .article_img {
     float: right;
     border-radius: 40%;
@@ -132,21 +150,59 @@ article a {
 
 /* _______________Articles.html_______________ */
 
+.article_main {
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
 
+.container {
+    display: flex;
+    /*justify-content: ;*/
+}
+
+.right_img {
+    width: 100%;
+}
+
+.comment {
+    margin: auto;
+    width: 50%;
+    background-color: #01002c;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 2%;
+}
+
+h4 {
+    margin-bottom: 1%;
+}
+
+.date_comment {
+    margin: 1%;
+}
+
+.text_comment {
+    margin-top: 1%;
+}
 
 /* _______________Footer_______________ */
 
 footer {
     background-color: var(--dark_blue);
-    color: var(--light_beige);
+    color: var(--primary_beige);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+footer nav {
+    width: 50%;
+}
+
 footer ul {
     text-align: center;
-    list-style-type: none;
     font-size: 110%;
+    padding: 0%;
     margin: 1%;
 }

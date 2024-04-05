@@ -12,34 +12,139 @@
 
 <body>
     <header>
-        <div class="logo_and_title">
+        <nav class="logo_and_title">
             <a href="index.html"><img src="../assets/img/logo.png" class="logo" alt="Logo"></a>
-            <h1>BG3 companions</h1>
-        </div>
+            <p class="site_title">BG3 companions</p>
+        </nav>
         <a href="login.html" class="button_login">Connexion</a>
     </header>    
 
-    <main>
-            <h2>Astarion</h2>
-            <p class="description">Pendant des siècles, Astarion a rôdé la nuit sous la forme d'un vampire, suivant les ordres de son maître sadique Cazador : séduire 
-                tous les imbéciles avec un pouls et les attirer dans l'antre de ce dernier. Grâce à la larve qui se trouve derière son oeil, Astarion a récupéré une 
-                liberté relative, et il fera tout pour la conserver et continuer de vivre à la lumière du soleil. Son corps est à jamais entaché par les cicatrices 
-                complexes gravées par Cazador sur son dos, le reliant à un mystérieux secret qui pourrait bien lui permettre de devenir bien plus puissant que son 
-                ancien maitre ne pourrait jamais rêver de l’être.</p>
+    <main class="article_main">
+        <article class="container">
+            <div class="article_body">
+                <h1>Astarion</h1>
+                <h2>L'elfe pâle</h2>
+                <p class="description">Pendant des siècles, Astarion a rôdé la nuit sous la forme d'un vampire, suivant les ordres de son maître sadique Cazador : séduire 
+                    tous les imbéciles avec un pouls et les attirer dans l'antre de ce dernier. Grâce à la larve qui se trouve derière son oeil, Astarion a récupéré une 
+                    liberté relative, et il fera tout pour la conserver et continuer de vivre à la lumière du soleil. Son corps est à jamais entaché par les cicatrices 
+                    complexes gravées par Cazador sur son dos, le reliant à un mystérieux secret qui pourrait bien lui permettre de devenir bien plus puissant que son 
+                    ancien maitre ne pourrait jamais rêver de l’être.</p>
+            </div>
 
-            <aside>
-                <img src="../assets/img/Astarion.png" class="aside_img" alt="Portrait d'Astarion">
-            </aside>
+            <img src="../assets/img/Astarion.png" class="right_img" alt="Portrait d'Astarion">
+        </article>
 
-            <h3 id="comments">Commentaires</h3>
+        <table class="table table-dark">
+            <thead>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Col1</th>
+                    <th scope="col">Col2</th>
+                    <th scope="col">Col3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bg-primary">
+                    <td>Row1</td>
+                    <td>1-1</td>
+                    <td>1-2</td>
+                    <td>1-3</td>
+                </tr>
+                <tr>
+                    <td>Row2</td>
+                    <td>2-1</td>
+                    <td>2-2</td>
+                    <td>2-3</td>
+                </tr>
+                <tr>
+                    <td>Row3</td>
+                    <td>3-1</td>
+                    <td>3-2</td>
+                    <td>3-3</td>
+                </tr>
+                <tr>
+                    <td>Row4</td>
+                    <td>4-1</td>
+                    <td>4-2</td>
+                    <td>4-3</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <section id="comments">
+            <h3>Commentaires</h3>
+
+            <ul>
+                <li>
+                    <article class="comment">
+                        <div class="info_comment">
+                            <h4>User1</h4>
+                            <time datetime="2024-04-05" class="date_comment">5 avril 2024</time>
+                        </div>
+                        <p class="text_comment">Give attitude munch, munch, chomp, chomp. Kitten is playing with dead mouse attack dog, run away and pretend to be victim 
+                            meow but refuse to come home when humans are going to bed; stay out all night then yowl like i am dying.</p>
+                    </article>
+                </li>
+                <li>
+                    <article class="comment">
+                        <div class="info_comment">
+                            <h4>User2</h4>
+                            <time datetime="2024-04-05" class="date_comment">3 avril 2024</time>
+                        </div>
+                        <p class="text_comment">Jump around on couch, meow constantly until given food, destroy couch as revenge and cats are cute or i could pee on this 
+                            if i had the energy curl up and sleep on the freshly laundered towels, and you are a captive audience while sitting on the toilet, pet me. </p>
+                    </article>
+                </li>
+                <li>
+                    <article class="comment">
+                        <div class="info_comment">
+                            <h4>User3</h4>
+                            <time datetime="2024-04-05" class="date_comment">2 avril 2024</time>
+                        </div>
+                        <p class="text_comment">Kitty loves pigs</p>
+                    </article>
+                </li>
+                <li>
+                    <article class="comment">
+                        <div class="info_comment">
+                            <h4>User4</h4>
+                            <time datetime="2024-04-05" class="date_comment">29 mars 2024</time>
+                        </div>
+                        <p class="text_comment">Cats go for world domination.</p>
+                    </article>
+                </li>
+                <li>
+                    <article class="comment">
+                        <div class="info_comment">
+                            <h4>User5</h4>
+                            <time datetime="2024-04-05" class="date_comment">25 mars 2024</time>
+                        </div>
+                        <p class="text_comment">Be a nyan cat, feel great about it, be annoying 24/7 poop rainbows in litter box all day to pet a cat, rub its 
+                            belly, endure blood and agony, quietly weep, keep rubbing belly eat a plant, kill a hand cat mojo so kitty kitty pussy cat doll 
+                            rub whiskers on bare skin act innocent. </p>
+                    </article>
+                </li>
+                <li>
+                    <article class="comment">
+                        <div class="info_comment">
+                            <h4>User6</h4>
+                            <time datetime="2024-04-05" class="date_comment">20 mars 2024</time>
+                        </div>
+                        <p class="text_comment">Ask to be pet then attack owners hand. feed me and one of these days i'm going to get that red dot.</p>
+                    </article>
+                </li>
+            </ul>
+        </section>
     </main>
 
     <footer>
-        <ul>
-            <li>Contact</li>
-            <li>Mentions légales</li>
-            <li>A propos</li>
-        </ul>
+        <nav>
+            <ul>
+                <li>Contact</li>
+                <li>Mentions légales</li>
+                <li>A propos</li>
+            </ul>
+        </nav>
     </footer>
 </body>
 

@@ -4,22 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../main.css">
     <title>Login</title>
 </head>
 
 <body>
     <header>
-        <a href="index.html"><img src="logo.png" alt="Logo"></a>
-        <h1>BG3 companions</h1>
-        <a href="login.html">Se connecter</a>
-    </header>    
+        <nav class="logo_and_title">
+            <a href="index.html"><img src="../assets/img/logo.png" class="logo" alt="Logo"></a>
+            <p class="site_title">BG3 compagnons</p>
+        </nav>
+        <a href="login.html" class="button_login">Connexion</a>
+    </header>   
 
-    <main>
-        <h1>Login</h1>
+    <main class="login_main">
+        <h1>Connexion</h1>
+
+        <form action="index.html" method="post">
+            <input type="email" name="email" placeholder="Email" required><br>
+            <input type="password" name="password" placeholder="Mot de passe" required><br>
+            <input type="submit" value="Se connecter">
+        </form>
     </main>
 
-    <footer>
-
+    <footer class="footer_login">
+        <nav>
+            <ul>
+                <li>Contact</li>
+                <li>Mentions légales</li>
+                <li>A propos</li>
+            </ul>
+        </nav>
     </footer>
 </body>
 

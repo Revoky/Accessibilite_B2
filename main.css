@@ -15,6 +15,10 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: var(--primary_blue);
@@ -161,8 +165,20 @@ article a {
     /*justify-content: ;*/
 }
 
+h2 {
+    margin-bottom: 2%;
+    font-size: 160%;
+}
+
 .right_img {
-    width: 100%;
+    width: 120%;
+    margin-left: 5%;
+}
+
+.table {
+    width: 50%;
+    margin: auto;
+    margin-top: 3%;
 }
 
 .comment {
@@ -172,6 +188,11 @@ article a {
     border-radius: 20px;
     padding: 20px;
     margin-bottom: 2%;
+}
+
+h3 {
+    margin: 5%;
+    text-align: center;
 }
 
 h4 {
@@ -186,23 +207,88 @@ h4 {
     margin-top: 1%;
 }
 
+/* _______________Login.html_______________ */
+
+.login_main {
+    width: 35%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid var(--primary_beige);
+    border-radius: 20px;
+    padding: 4%;
+}
+
+form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="submit"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="email"],
+input[type="password"] {
+    background-color: rgb(214, 214, 214);
+}
+
+input[type="submit"] {
+    background-color: var(--dark_beige);
+    color: var(--dark_blue);
+    cursor: pointer;
+    margin-top: 3%;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--primary_beige);
+    color: var(--dark_blue);
+}
+
 /* _______________Footer_______________ */
 
 footer {
     background-color: var(--dark_blue);
     color: var(--primary_beige);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.footer_login {
+    position:absolute;
+    width:100%;
+    bottom:0px;
+}
+
 footer nav {
-    width: 50%;
+    width: 20%;
+    margin: 1%;
 }
 
 footer ul {
     text-align: center;
     font-size: 110%;
     padding: 0%;
+    margin: 1%;
+}
+
+.info_footer {
+    width: 20%;
+    text-align: center;
     margin: 1%;
 }

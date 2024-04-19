@@ -9,34 +9,43 @@
 </head>
 
 <body>
-    <header>
+    <header aria-label="En-tête de page">
         <a href="index.html" aria-label="Accueil">
-            <nav class="logo_and_title">
-                <img src="../assets/img/logo.webp" class="logo" alt="Logo" aria-label="Logo du site BG3 compagnons">
+            <div class="logo_and_title">
+                <img src="../assets/img/logo.webp" class="logo" alt="Logo du site BG3 compagnons">
                 <p class="site_title">BG3 compagnons</p>
-            </nav>
+            </div>
         </a>
-        <a href="login.html" class="button_login" aria-label="Lien vers page de connexion">Connexion</a>
+        <nav class="login_registration">
+            <ul>
+                <li>
+                    <a href="login.html" class="button_login">Connexion</a>
+                </li>
+            </ul>
+        </nav>
     </header>    
 
-    <main class="login_main">
+    <main class="login_main" aria-label="Contenu principal">
         <h1>Connexion</h1>
 
         <form action="index.html" method="post">
-            <input type="email" name="email" placeholder="Email" required aria-label="Champ de l'email du formulaire de connexion"><br>
-            <input type="password" name="password" placeholder="Mot de passe" required aria-label="Champ du mot de passe du formulaire de connexion"><br>
+            <input type="email" name="email" placeholder="Email" required autofocus autocomplete="username"><br>
+            <input type="password" name="password" placeholder="Mot de passe" required autocomplete="current-password" minlength="8"><br>
             <input type="submit" value="Se connecter">
         </form>
     </main>
 
-    <footer class="footer_login">
+    <footer class="footer_login" aria-label="Pied de page">
         <nav>
             <ul>
                 <li>Contact</li>
                 <li>Mentions légales</li>
-                <li>A propos</li>
+                <li>Politique de confidentialité</li>
+                <li>Conditions générales</li>
+                <li>Aide</li>
             </ul>
         </nav>
+        <div class="info_footer" aria-label="Adresse et numéro de téléphone">2 place de l'Europe, 31 000 Toulouse <br> 05 01 02 03 04</div>
     </footer>
 </body>
 

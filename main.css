@@ -72,6 +72,10 @@ header a {
     padding: 10px 20px;
 }
 
+.login_registration {
+    margin-right: 2%;
+}
+
 .button_login {
     color: var(--primary_beige);
     border: 1px solid var(--dark_beige);
@@ -162,7 +166,9 @@ article a {
 
 .container {
     display: flex;
-    /*justify-content: ;*/
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 h2 {
@@ -171,8 +177,7 @@ h2 {
 }
 
 .right_img {
-    width: 120%;
-    margin-left: 5%;
+    width: 25%;
 }
 
 .table {

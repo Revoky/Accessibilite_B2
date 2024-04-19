@@ -11,18 +11,27 @@
 </head>
 
 <body>
-    <header>
+    <header aria-label="En-tête de page">
         <a href="index.html" aria-label="Accueil">
-            <nav class="logo_and_title">
-                <img src="../assets/img/logo.webp" class="logo" alt="Logo" aria-label="Logo du site BG3 compagnons">
+            <div class="logo_and_title">
+                <img src="../assets/img/logo.webp" class="logo" alt="Logo du site BG3 compagnons">
                 <p class="site_title">BG3 compagnons</p>
-            </nav>
+            </div>
         </a>
-        <a href="login.html" class="button_login" aria-label="Lien vers page de connexion">Connexion</a>
+        <nav class="login_registration">
+            <ul>
+                <li>
+                    <a href="login.html" class="button_login">Connexion</a>
+                </li>
+            </ul>
+        </nav>
     </header>    
 
-    <main class="article_main">
+    <main class="article_main" aria-label="Contenu principal">
         <article class="container">
+
+            <img src="../assets/img/Astarion.webp" class="right_img" alt="Portrait d'Astarion">
+
             <div class="article_body">
                 <h1>Astarion</h1>
                 <h2>L'elfe pâle</h2>
@@ -33,45 +42,43 @@
                     ancien maitre ne pourrait jamais rêver de l’être.</p>
             </div>
 
-            <img src="../assets/img/Astarion.webp" class="right_img" alt="Portrait d'Astarion">
+            <table class="table table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Col1</th>
+                        <th scope="col">Col2</th>
+                        <th scope="col">Col3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="bg-primary">
+                        <td>Row1</td>
+                        <td>1-1</td>
+                        <td>1-2</td>
+                        <td>1-3</td>
+                    </tr>
+                    <tr>
+                        <td>Row2</td>
+                        <td>2-1</td>
+                        <td>2-2</td>
+                        <td>2-3</td>
+                    </tr>
+                    <tr>
+                        <td>Row3</td>
+                        <td>3-1</td>
+                        <td>3-2</td>
+                        <td>3-3</td>
+                    </tr>
+                    <tr>
+                        <td>Row4</td>
+                        <td>4-1</td>
+                        <td>4-2</td>
+                        <td>4-3</td>
+                    </tr>
+                </tbody>
+            </table>
         </article>
-
-        <table class="table table-dark">
-            <thead>
-                <tr>
-                    <th scope="col"></th>
-                    <th scope="col">Col1</th>
-                    <th scope="col">Col2</th>
-                    <th scope="col">Col3</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="bg-primary">
-                    <td>Row1</td>
-                    <td>1-1</td>
-                    <td>1-2</td>
-                    <td>1-3</td>
-                </tr>
-                <tr>
-                    <td>Row2</td>
-                    <td>2-1</td>
-                    <td>2-2</td>
-                    <td>2-3</td>
-                </tr>
-                <tr>
-                    <td>Row3</td>
-                    <td>3-1</td>
-                    <td>3-2</td>
-                    <td>3-3</td>
-                </tr>
-                <tr>
-                    <td>Row4</td>
-                    <td>4-1</td>
-                    <td>4-2</td>
-                    <td>4-3</td>
-                </tr>
-            </tbody>
-        </table>
 
         <aside id="comments" aria-label="Section commentaires">
             <h3>Commentaires</h3>
@@ -139,14 +146,17 @@
         </aside>
     </main>
 
-    <footer>
+    <footer aria-label="Pied de page">
         <nav>
             <ul>
                 <li>Contact</li>
                 <li>Mentions légales</li>
-                <li>A propos</li>
+                <li>Politique de confidentialité</li>
+                <li>Conditions générales</li>
+                <li>Aide</li>
             </ul>
         </nav>
+        <div class="info_footer" aria-label="Adresse et numéro de téléphone">2 place de l'Europe, 31 000 Toulouse <br> 05 01 02 03 04</div>
     </footer>
 </body>
 

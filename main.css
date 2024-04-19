@@ -24,6 +24,10 @@ body {
     background-color: var(--primary_blue);
 }
 
+a {
+    text-decoration: none;
+}
+
 .site_title, h1, h3, h4, .text_comment, .description {
     color: var(--primary_beige);
 }
@@ -68,7 +72,6 @@ header {
 }
 
 header a {
-    text-decoration: none;
     padding: 10px 20px;
 }
 
@@ -110,10 +113,6 @@ header a {
     margin-bottom: 50px;
 }
 
-article a {
-    text-decoration: none;
-}
-
 .article_title {
     color: var(--dark_beige);
     font-size: 150%;
@@ -147,7 +146,7 @@ article a {
     text-overflow: ellipsis;
 }
 
-.redirect_comment {
+.redirect_comment, a {
     color: var(--light_blue);
 }
 
